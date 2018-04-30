@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package jdbcutil;
+package com.java.jdbcutil;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -22,14 +22,15 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+
 /**
- * 忽略，如果数据库表中没有当前字段，则加上这个标识。
+ * 指定表的主键，使用在GET方法上的注释
  * 
  * @author <a href="mailto:main_shorttime@163.com">tengfei.fangtf</a>
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface Transient {
+public @interface Id {
 
 }
