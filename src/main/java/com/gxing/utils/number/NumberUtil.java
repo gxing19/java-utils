@@ -1,4 +1,4 @@
-package com.java.util.number;
+package com.gxing.utils.number;
 
 import java.math.BigDecimal;
 
